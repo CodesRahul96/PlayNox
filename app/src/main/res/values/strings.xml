@@ -127,4 +127,12 @@
     <string name="player_appearance">Player Appearance</string>
     <string name="ambient_mode">Ambient Mode</string>
     <string name="ambient_mode_warning">Makes the player background glow. May increase battery usage and affect performance.</string>
+
+    <!-- About Screen -->
+    <string name="about_device_info">Device Info</string>
+    <string name="about_engine_versions">Engine Versions</string>
+    <string name="about_community_support">Community &amp; Support</string>
+    <string name="about_credits">Credits</string>
+    <string name="about_credits_desc">Third-party libraries and contributors</string>
+    <string name="about_developer">Developed by CodesRahul96</string>
 </resources>

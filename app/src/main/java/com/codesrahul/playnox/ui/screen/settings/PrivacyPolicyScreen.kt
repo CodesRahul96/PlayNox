@@ -28,6 +28,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
+import androidx.compose.ui.res.stringResource
+import com.codesrahul.playnox.R
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PrivacyPolicyScreen(onBack: () -> Unit) {
@@ -41,7 +44,7 @@ fun PrivacyPolicyScreen(onBack: () -> Unit) {
             TopAppBar(
                 title = {
                     Text(
-                        text = "Privacy Policy",
+                        text = stringResource(R.string.settings_privacy),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -50,7 +53,7 @@ fun PrivacyPolicyScreen(onBack: () -> Unit) {
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Back"
+                            contentDescription = stringResource(R.string.back)
                         )
                     }
                 },

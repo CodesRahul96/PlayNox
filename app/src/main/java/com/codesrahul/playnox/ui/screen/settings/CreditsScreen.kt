@@ -29,6 +29,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
+import androidx.compose.ui.res.stringResource
+import com.codesrahul.playnox.R
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CreditsScreen(
@@ -47,7 +50,7 @@ fun CreditsScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = "Open Source Credits",
+                        text = stringResource(R.string.about_credits),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -56,7 +59,7 @@ fun CreditsScreen(
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Back"
+                            contentDescription = stringResource(R.string.back)
                         )
                     }
                 },

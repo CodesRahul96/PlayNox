@@ -82,7 +82,7 @@ fun AboutScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = "About",
+                        text = stringResource(R.string.settings_about),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -114,13 +114,13 @@ fun AboutScreen(
 
             AboutBrandCard(versionName = versionName, buildType = buildType)
 
-            AboutSectionLabel(label = "Device Info")
+            AboutSectionLabel(label = stringResource(R.string.about_device_info))
             AboutDeviceInfoCard()
 
-            AboutSectionLabel(label = "Engine Versions")
+            AboutSectionLabel(label = stringResource(R.string.about_engine_versions))
             AboutEngineCard(mpvVersion = mpvVersion, ffmpegVersion = ffmpegVersion)
 
-            AboutSectionLabel(label = "Community & Support")
+            AboutSectionLabel(label = stringResource(R.string.about_community_support))
             AboutLinksCard(context = context)
 
             AboutCreditsCard(onClick = onNavigateToCredits)
