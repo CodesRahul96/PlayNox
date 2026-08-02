@@ -4,7 +4,7 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-B125EA?logo=kotlin&logoColor=white)
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-26%20%28Android%208.0%2B%29-blue)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/CodesRahul96/PlayNox?logo=github)](https://github.com/CodesRahul96/PlayNox/releases)
+[![Latest Release](https://img.shields.io/github/v/release/CodesRahul96/PlayNox-?logo=github)](https://github.com/CodesRahul96/PlayNox-/releases)
 
 **PlayNox Player** is a high-performance, native Android video player application built with Kotlin, Jetpack Compose, and the MPV Media Engine. Designed for absolute playback smoothness, clean Material Design 3 aesthetics, deep customization, and broad media format compatibility.
 
@@ -52,8 +52,8 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/CodesRahul96/PlayNox.git
-   cd PlayNox
+   git clone https://github.com/CodesRahul96/PlayNox-.git
+   cd PlayNox-
    ```
 
 2. **Download `mpvlib.aar`:**
@@ -72,7 +72,7 @@
 ## 👤 Developer & Credits
 
 - **Developer:** [CodesRahul96 (Rahul Misal)](https://github.com/CodesRahul96)
-- **Repository:** [PlayNox on GitHub](https://github.com/CodesRahul96/PlayNox)
+- **Repository:** [PlayNox on GitHub](https://github.com/CodesRahul96/PlayNox-)
 
 ### Acknowledgements & Credits
 Special thanks to the following open-source projects and developers:
