@@ -74,11 +74,6 @@
 - **Developer:** [CodesRahul96 (Rahul)](https://github.com/CodesRahul96)
 - **Repository:** [PlayNox on GitHub](https://github.com/CodesRahul96/PlayNox)
 
-### Acknowledgements
-Special thanks to:
-- [**MPV Player Team**](https://github.com/mpv-player/mpv) for the versatile media engine.
-- [**Ritesh Pandit (@Riteshp2001)**](https://github.com/Riteshp2001) / [mpvRx](https://github.com/Riteshp2001/mpvRx) for mpv.conf editor concepts and yt-dlp streaming integration patterns.
-
 ---
 
 ## 📄 License
