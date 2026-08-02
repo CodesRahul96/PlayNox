@@ -77,6 +77,8 @@ android {
             resValue("string", "app_name", "PlayNox Player")
             if (keystorePropertiesFile.exists()) {
                 signingConfig = signingConfigs.getByName("release")
+            } else {
+                signingConfig = signingConfigs.getByName("debug")
             }
             ndk {
                 debugSymbolLevel = "none"
