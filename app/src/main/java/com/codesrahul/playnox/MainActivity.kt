@@ -6,7 +6,7 @@ import android.os.Build
 import android.os.Bundle
 import android.content.Intent
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
@@ -46,7 +46,7 @@ import com.codesrahul.playnox.data.repository.PlaybackSettingsRepository
 import com.codesrahul.playnox.data.repository.ViewSettingsRepository
 import com.codesrahul.playnox.player.service.MediaPlaybackService
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     private val _isInPipMode = mutableStateOf(false)
     private val deepLinkUri = mutableStateOf<Uri?>(null)

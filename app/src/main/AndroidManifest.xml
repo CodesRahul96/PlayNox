@@ -25,7 +25,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.nvplayer"
         android:largeHeap="true"
-        android:hardwareAccelerated="true">
+        android:hardwareAccelerated="true"
+        android:localeConfig="@xml/locales_config">
+
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="androidx.appcompat.app.AppLocalesMetadataHolderService" />
+            </intent-filter>
+        </service>
         <activity
             android:name=".MainActivity"
             android:exported="true"
