@@ -23,7 +23,7 @@ import com.codesrahul.playnox.data.media.MediaStoreHelper
 import com.codesrahul.playnox.data.repository.VideoRepository
 import com.codesrahul.playnox.player.engine.MPVPlayerEngine
 import com.codesrahul.playnox.ui.navigation.AppNavigation
-import com.codesrahul.playnox.ui.theme.NosvedPlayerTheme
+import com.codesrahul.playnox.ui.theme.PlayNoxTheme
 import com.codesrahul.playnox.viewmodel.HomeViewModel
 import com.codesrahul.playnox.viewmodel.PlayerViewModel
 import com.codesrahul.playnox.viewmodel.SettingsViewModel
@@ -240,7 +240,7 @@ class MainActivity : AppCompatActivity() {
             val isNavBarTransparent by settingsViewModel.isNavBarTransparent.collectAsState()
             val isAmoledTheme by settingsViewModel.isAmoledTheme.collectAsState()
 
-            NosvedPlayerTheme(
+            PlayNoxTheme(
                 forceDark = isDark,
                 dynamicColor = dynamicColor,
                 palette = selectedPalette,

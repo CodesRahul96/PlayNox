@@ -16,7 +16,7 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 
-val NosvedShapes = Shapes(
+val PlayNoxShapes = Shapes(
     extraSmall = RoundedCornerShape(2.dp),
     small      = RoundedCornerShape(4.dp),
     medium     = RoundedCornerShape(6.dp),
@@ -25,7 +25,7 @@ val NosvedShapes = Shapes(
 )
 
 @Composable
-fun NosvedPlayerTheme(
+fun PlayNoxTheme(
     forceDark: Boolean? = null,
     dynamicColor: Boolean = false,
     palette: AppThemePalette = AppThemePalette.CINEMATIC,
@@ -81,8 +81,27 @@ fun NosvedPlayerTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography  = Typography,
-        shapes      = NosvedShapes,
+        shapes      = PlayNoxShapes,
         content     = content
+    )
+}
+
+@Composable
+fun NosvedPlayerTheme(
+    forceDark: Boolean? = null,
+    dynamicColor: Boolean = false,
+    palette: AppThemePalette = AppThemePalette.CINEMATIC,
+    isNavBarTransparent: Boolean = true,
+    isAmoledTheme: Boolean = false,
+    content: @Composable () -> Unit
+) {
+    PlayNoxTheme(
+        forceDark = forceDark,
+        dynamicColor = dynamicColor,
+        palette = palette,
+        isNavBarTransparent = isNavBarTransparent,
+        isAmoledTheme = isAmoledTheme,
+        content = content
     )
 }
 
