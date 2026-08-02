@@ -1,76 +1,86 @@
-# PlayNox
+# PlayNox Player
 
 ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-B125EA?logo=kotlin&logoColor=white)
-[![Downloads](https://img.shields.io/github/downloads/CodesRahul96/PlayNox/total?logo=github)](https://github.com/CodesRahul96/PlayNox/releases)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Min SDK](https://img.shields.io/badge/Min%20SDK-26%20%28Android%208.0%2B%29-blue)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/CodesRahul96/PlayNox?logo=github)](https://github.com/CodesRahul96/PlayNox/releases)
 
-PlayNox is a high-performance, native Android video player built with a focus on absolute playback smoothness, clean aesthetics, and extensive user customization.
-
----
-
-Originally built as an ExoPlayer-based application, PlayNox has been completely re-engineered under the hood to utilize the **mpv-android** engine. This architectural shift merges our minimalist Material Design UI with the raw decoding power of MPV, delivering unmatched format compatibility, hardware acceleration, and seamless video handling.
-
-> ## Why MPV?
-
-The transition from ExoPlayer to `is.xyz.mpv` allows Nosved Player to offer a truly desktop-class media experience on mobile. It brings native hardware decoding (`mediacodec`), superior subtitle rendering, and real-time color enhancement capabilities without sacrificing battery life or UI responsiveness.
-
-> ## Key Features
-
-> > ### Advanced Playback Engine
-
-- **Dynamic Decoder Selection:** Instantly switch between Auto, Hardware (HW/HW+), and Software (SW) decoding on the fly.
-- **Smart Audio Boost:** Amplify low-volume videos safely up to 200%.
-- **Rich Subtitle Support:** Cycle tracks, adjust synchronization delays, customize fonts, and tweak scaling/offsets directly from the player.
-- **Smart Enhance Mode:** Real-time hardware-level adjustments for Video Brightness, Contrast, Saturation, Gamma, and Hue.
-
-> > ### Clean, Native UI
-
-- **Material Design 3:** fully integrated with Android's Dynamic Color palette.
-- **AMOLED & Dark Themes:** True black modes for battery saving and comfortable nighttime viewing.
-- **Unobtrusive Overlays:** Transparent navigation bars, auto-hiding controls, and configurable quick-action buttons.
-- **Smooth Navigation:** Jetpack Compose-driven UI for a fluid, jank-free browsing experience.
-
-> > ### Deep Customization & Gestures
-
-- **Multi-finger Gestures:** Configure 2-finger and 3-finger taps for rapid actions (Play/Pause, Fast Play, etc.).
-- **Screen Edge Controls:** Slide to adjust brightness and volume, with customizable sensitivity.
-- **Layout Editor:** Customize top and bottom control panels to fit your exact workflow.
-- **Multiple Finger Gestures:** Configurable seek durations and tap-to-speed parameters.
-
-> ## Building the Project
-
-> > ### Prerequisites
-
-- Android Studio (Latest Stable or Ladybug)
-- JDK 17+
-- Android SDK API 34+
-
-> > ### Clone & Build
-
-```bash
-git clone https://github.com/CodesRahul96/PlayNox.git
-cd PlayNox
-./gradlew assembleRelease
-```
-
-## Acknowledgements
-
-Special thanks to [**Ritesh Pandit (@Riteshp2001)**](https://github.com/Riteshp2001) and the [**mpvRx**](https://github.com/Riteshp2001/mpvRx) project for the inspiration and foundational work on:
-
-- **yt-dlp Online Streaming Integration** - enabling seamless online video playback via yt-dlp within an MPV-based Android player.
-- **MPV Config Editor** - the in-app mpv.conf editor concept that allows users to tweak the MPV engine directly from the UI.
-- **Thumbnail Generation Integration** - the approach to generating and displaying video thumbnails within an MPV-backed player.
+**PlayNox Player** is a high-performance, native Android video player application built with Kotlin, Jetpack Compose, and the MPV Media Engine. Designed for absolute playback smoothness, clean Material Design 3 aesthetics, deep customization, and broad media format compatibility.
 
 ---
 
-<!--
-## Star History
+## 🌟 Key Features
 
-<a href="https://www.star-history.com/?repos=CodesRahul96%2FPlayNox&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=CodesRahul96/PlayNox&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=CodesRahul96/PlayNox&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=CodesRahul96/PlayNox&type=date&legend=top-left" />
- </picture>
-</a> -->
+### 🎬 Advanced Playback Engine (MPV)
+- **Desktop-Class Decoding:** Powered by `libmpv` (v0.37.0+) with native `mediacodec` hardware acceleration (HW / HW+ / SW decoding).
+- **Smart Audio Boost:** Amplify low-volume media safely up to 200%.
+- **Rich Subtitle Control:** Cycle tracks, adjust subtitle delay, scaling, offsets, and custom fonts.
+- **Smart Video Enhancement:** Real-time hardware adjustments for Brightness, Contrast, Saturation, Gamma, and Hue.
+
+### 🎨 Clean Material Design 3 & Theme Customization
+- **Material You Dynamic Colors:** Full integration with Android 12+ dynamic system palettes.
+- **Dark & AMOLED Themes:** True black modes for battery efficiency on OLED displays.
+- **Multilingual Support:** Native **English** and **Marathi (मराठी)** language localization support across all screens.
+
+### ⚡ Deep Gestures & Customization
+- **Edge Controls:** Vertical swipe gestures for fast brightness and volume adjustments.
+- **Multi-Touch Gestures:** Customizable multi-finger tap actions (Play/Pause, Seek, Fast Forward).
+- **Layout Editor:** Customize player overlay panels and floating control buttons.
+- **mpv.conf Editor:** Built-in in-app editor to tweak MPV engine parameters directly.
+
+---
+
+## 🛠️ Technology Stack
+
+- **UI Framework:** 100% Jetpack Compose with Material 3 components
+- **Media Engine:** MPV Player Engine (`is.xyz.mpv`) + FFmpeg 6.1
+- **Async & Reactive:** Kotlin Coroutines & StateFlow
+- **Image & Thumbnail Loading:** Coil 3
+- **Metadata Extraction:** MediaInfo Native Library
+
+---
+
+## 🚀 Building from Source
+
+### Prerequisites
+- **Android Studio:** Ladybug or newer
+- **JDK:** 17+
+- **Android SDK:** API 34+ (compileSdk 36)
+
+### Steps
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/CodesRahul96/PlayNox.git
+   cd PlayNox
+   ```
+
+2. **Download `mpvlib.aar`:**
+   Download `mpvlib.aar` from [mpvlibAndroid Releases](https://github.com/SunnyVishnu3/mpvlibAndroid/releases/latest) and place it inside `app/libs/`:
+   ```bash
+   curl -L -o "app/libs/mpvlib.aar" "https://github.com/SunnyVishnu3/mpvlibAndroid/releases/download/2026-6-1/mpvlib.aar"
+   ```
+
+3. **Build APK:**
+   ```bash
+   ./gradlew assembleRelease
+   ```
+
+---
+
+## 👤 Developer & Credits
+
+- **Developer:** [CodesRahul96 (Rahul)](https://github.com/CodesRahul96)
+- **Repository:** [PlayNox on GitHub](https://github.com/CodesRahul96/PlayNox)
+
+### Acknowledgements
+Special thanks to:
+- [**MPV Player Team**](https://github.com/mpv-player/mpv) for the versatile media engine.
+- [**Ritesh Pandit (@Riteshp2001)**](https://github.com/Riteshp2001) / [mpvRx](https://github.com/Riteshp2001/mpvRx) for mpv.conf editor concepts and yt-dlp streaming integration patterns.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
