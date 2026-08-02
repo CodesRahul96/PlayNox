@@ -135,4 +135,19 @@
     <string name="about_credits">Credits</string>
     <string name="about_credits_desc">Third-party libraries and contributors</string>
     <string name="about_developer">Developed by CodesRahul96</string>
+
+    <!-- Tools Screen -->
+    <string name="tools_title">Tools</string>
+    <string name="tools_batch_frame">Batch Frame Extractor</string>
+    <string name="tools_batch_frame_desc">Extract image frames sequentially from video segments directly into your gallery.</string>
+    <string name="tools_timestamp">Timestamp Tools</string>
+    <string name="tools_timestamp_desc">Convert epoch milliseconds to dates and vice versa with a live clock.</string>
+    <string name="tools_mediastore">MediaStore ID Finder</string>
+    <string name="tools_mediastore_desc">Find file paths and launch external apps using an Android MediaStore ID.</string>
+
+    <!-- Player Interface Settings -->
+    <string name="player_interface_title">Player Interface</string>
+    <string name="player_control_layout">Control Regions Layout Customization</string>
+    <string name="player_custom_controls">Custom Controls Layout</string>
+    <string name="player_custom_controls_desc">Customize and reorder control buttons using an interactive player preview</string>
 </resources>

@@ -58,7 +58,7 @@ fun PlayerInterfaceSettingsScreen(
             TopAppBar(
                 title = {
                     Text(
-                        "Player Interface",
+                        stringResource(R.string.player_interface_title),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -68,7 +68,7 @@ fun PlayerInterfaceSettingsScreen(
                         onClick = onNavigateBack,
                         modifier = Modifier.minimumInteractiveComponentSize()
                     ) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back))
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -92,11 +92,11 @@ fun PlayerInterfaceSettingsScreen(
 
             // Control Region Layout Customization
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                InterfaceSectionHeader("Control Regions Layout Customization")
+                InterfaceSectionHeader(stringResource(R.string.player_control_layout))
                 SettingClickableCard(
                     icon = Icons.Default.Dashboard,
-                    title = "Custom Controls Layout",
-                    subtitle = "Customize and reorder control buttons using an interactive player preview",
+                    title = stringResource(R.string.player_custom_controls),
+                    subtitle = stringResource(R.string.player_custom_controls_desc),
                     onClick = onNavigateToControlEditor
                 )
             }

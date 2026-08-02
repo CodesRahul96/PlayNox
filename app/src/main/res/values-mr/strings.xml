@@ -135,4 +135,19 @@
     <string name="about_credits">श्रेय आणि आभार</string>
     <string name="about_credits_desc">तृतीय-पक्ष लायब्ररी आणि योगदानकर्ते</string>
     <string name="about_developer">CodesRahul96 द्वारे विकसित</string>
+
+    <!-- Tools Screen -->
+    <string name="tools_title">साधने</string>
+    <string name="tools_batch_frame">बॅच फ्रेम एक्स्ट्रॅक्टर</string>
+    <string name="tools_batch_frame_desc">व्हिडिओ सेगमेंटमधून प्रतिमा फ्रेम्स थेट तुमच्या गॅलरीमध्ये काढा.</string>
+    <string name="tools_timestamp">टाइमस्टॅम्प साधने</string>
+    <string name="tools_timestamp_desc">लाइव्ह घड्याळासह मिलीसेकंद तारखेत रुपांतरित करा.</string>
+    <string name="tools_mediastore">मीडियास्टोअर आयडी शोधक</string>
+    <string name="tools_mediastore_desc">Android मीडियास्टोअर आयडी वापरून फाइल मार्ग शोधा.</string>
+
+    <!-- Player Interface Settings -->
+    <string name="player_interface_title">प्लेअर इंटरफेस</string>
+    <string name="player_control_layout">कंट्रोल रिजन लेआउट सानुकूलन</string>
+    <string name="player_custom_controls">सानुकूल कंट्रोल लेआउट</string>
+    <string name="player_custom_controls_desc">परस्परसंवादी प्लेअर पूर्वावलोकनासह कंट्रोल बटणे सानुकूलित करा</string>
 </resources>

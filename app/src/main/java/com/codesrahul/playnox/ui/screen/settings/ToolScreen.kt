@@ -15,6 +15,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.filled.Movie
 
+import androidx.compose.ui.res.stringResource
+import com.codesrahul.playnox.R
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ToolScreen(
@@ -27,10 +30,10 @@ fun ToolScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Tools", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold) },
+                title = { Text(stringResource(R.string.tools_title), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back))
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background)
@@ -51,20 +54,20 @@ fun ToolScreen(
         ) {
             ToolHubCard(
                 icon = Icons.Default.Movie,
-                title = "Batch Frame Extractor",
-                description = "Extract image frames sequentially from video segments directly into your gallery.",
+                title = stringResource(R.string.tools_batch_frame),
+                description = stringResource(R.string.tools_batch_frame_desc),
                 onClick = onNavigateToFrameExtractor
             )
             ToolHubCard(
                 icon = Icons.Default.AccessTime,
-                title = "Timestamp Tools",
-                description = "Convert epoch milliseconds to dates and vice versa with a live clock.",
+                title = stringResource(R.string.tools_timestamp),
+                description = stringResource(R.string.tools_timestamp_desc),
                 onClick = onNavigateToMilliSeconds
             )
             ToolHubCard(
                 icon = Icons.Default.Search,
-                title = "MediaStore ID Finder",
-                description = "Find file paths and launch external apps using an Android MediaStore ID.",
+                title = stringResource(R.string.tools_mediastore),
+                description = stringResource(R.string.tools_mediastore_desc),
                 onClick = onNavigateToMediaStoreFinder
             )
         }
