@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">nvplayer</string>
+    <string name="app_name">PlayNox Player</string>
     
     <!-- Settings Screen -->
     <string name="unknown">Unknown</string>

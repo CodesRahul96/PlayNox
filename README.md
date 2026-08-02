@@ -1,15 +1,15 @@
-# Nosved Player (Nosved Player)
+# PlayNox
 
 ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-B125EA?logo=kotlin&logoColor=white)
-[![Downloads](https://img.shields.io/github/downloads/DevSon1024/Nosved-Player/total?logo=github)](https://github.com/DevSon1024/Nosved-Player/releases)
+[![Downloads](https://img.shields.io/github/downloads/CodesRahul96/PlayNox/total?logo=github)](https://github.com/CodesRahul96/PlayNox/releases)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Nosved Player is a high-performance, native Android video player built with a focus on absolute playback smoothness, clean aesthetics, and extensive user customization.
+PlayNox is a high-performance, native Android video player built with a focus on absolute playback smoothness, clean aesthetics, and extensive user customization.
 
 ---
 
-Originally built as an ExoPlayer-based application, Nosved Player has been completely re-engineered under the hood to utilize the **mpv-android** engine. This architectural shift merges our minimalist Material Design UI with the raw decoding power of MPV, delivering unmatched format compatibility, hardware acceleration, and seamless video handling.
+Originally built as an ExoPlayer-based application, PlayNox has been completely re-engineered under the hood to utilize the **mpv-android** engine. This architectural shift merges our minimalist Material Design UI with the raw decoding power of MPV, delivering unmatched format compatibility, hardware acceleration, and seamless video handling.
 
 > ## Why MPV?
 
@@ -49,8 +49,8 @@ The transition from ExoPlayer to `is.xyz.mpv` allows Nosved Player to offer a tr
 > > ### Clone & Build
 
 ```bash
-git clone https://github.com/DevSon1024/Nosved-Player.git
-cd Nosved-Player
+git clone https://github.com/CodesRahul96/PlayNox.git
+cd PlayNox
 ./gradlew assembleRelease
 ```
 
@@ -67,10 +67,10 @@ Special thanks to [**Ritesh Pandit (@Riteshp2001)**](https://github.com/Riteshp2
 <!--
 ## Star History
 
-<a href="https://www.star-history.com/?repos=Devson1024%2Fnosved-player&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=CodesRahul96%2FPlayNox&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Devson1024/nosved-player&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Devson1024/nosved-player&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Devson1024/nosved-player&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=CodesRahul96/PlayNox&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=CodesRahul96/PlayNox&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=CodesRahul96/PlayNox&type=date&legend=top-left" />
  </picture>
 </a> -->

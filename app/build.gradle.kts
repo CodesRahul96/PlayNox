@@ -19,7 +19,7 @@ val splitApks = !project.hasProperty("noSplits") && !gradle.startParameter.taskN
 }
 
 android {
-    namespace = "com.devson.nvplayer"
+    namespace = "com.codesrahul.playnox"
     compileSdk {
         version = release(36)
     }
@@ -30,11 +30,11 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.devson.nvplayer"
+        applicationId = "com.codesrahul.playnox"
         minSdk = 26
         targetSdk = 36
-        versionCode = 115
-        versionName = "1.1.5"
+        versionCode = 100
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -64,7 +64,7 @@ android {
             isDebuggable = true
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"
-            resValue("string", "app_name", "NPlay Beta")
+            resValue("string", "app_name", "PlayNox Beta")
         }
 
         release {
@@ -74,7 +74,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_name", "Nosved Player")
+            resValue("string", "app_name", "PlayNox Player")
             if (keystorePropertiesFile.exists()) {
                 signingConfig = signingConfigs.getByName("release")
             }
@@ -96,7 +96,7 @@ android {
         variant.outputs.all {
             val outputImpl = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
             val abiName = outputImpl.filters.find { it.filterType == "ABI" }?.identifier ?: "universal"
-            outputFileName = "NosvedPlayer-v${variant.versionName}-${abiName}.apk"
+            outputFileName = "PlayNox-v${variant.versionName}-${abiName}.apk"
         }
     }
     compileOptions {

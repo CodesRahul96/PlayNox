@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlayNox Player</string>
+    
+    <!-- Settings Screen -->
+    <string name="unknown">अज्ञात</string>
+    <string name="settings_title">सेटिंग्ज</string>
+    <string name="back">मागे</string>
+    <string name="settings_appearance">दिसणे</string>
+    <string name="settings_display">प्रदर्शन आणि थीम</string>
+    <string name="settings_display_desc">पॅलेट, डार्क मोड, डायनॅमिक रंग, भाषा</string>
+    <string name="settings_player">प्लेअर सेटिंग्ज</string>
+    <string name="settings_about_list">फ्लोटिंग बटण, सानुकूल करा</string>
+    <string name="settings_about_folders">मीडिया स्कॅनिंगमधून फोल्डर जोडा किंवा वगळा</string>
+    <string name="settings_app">सामान्य</string>
+    <string name="settings_about">ॲपबद्दल</string>
+    <string name="settings_about_desc">आवृत्ती, डेव्हलपर माहिती, कायदेशीर दस्तऐवज</string>
+    <string name="settings_privacy">गोपनीयता धोरण</string>
+    <string name="settings_privacy_desc">आमच्या गोपनीयता वचनबद्धतेबद्दल वाचा</string>
+    <string name="settings_developer">डेव्हलपर पर्याय</string>
+    <string name="settings_error_logs">त्रुटी लॉग</string>
+    <string name="settings_error_logs_desc">अलीकडील क्रॅश आणि डीबग लॉग पहा</string>
+    <string name="settings_version">आवृत्ती %1$s</string>
+    <string name="settings_stable">स्थिर</string>
+
+    <!-- Appearance Settings Screen -->
+    <string name="appearance_dark_theme">डार्क थीम</string>
+    <string name="appearance_light">लाइट</string>
+    <string name="appearance_dark">डार्क</string>
+    <string name="appearance_system_default">सिस्टम डीफॉल्ट</string>
+    <string name="appearance_close">बंद करा</string>
+    <string name="appearance_language">भाषा / Language</string>
+    <string name="appearance_english">इंग्रजी (English)</string>
+    <string name="appearance_marathi_full">मराठी (Marathi)</string>
+    <string name="appearance_marathi">मराठी</string>
+    <string name="appearance_colour_palette">रंग पॅलेट</string>
+    <string name="appearance_theme">थीम मोड</string>
+    <string name="appearance_dynamic_colour">डायनॅमिक रंग</string>
+    <string name="appearance_dynamic_colour_desc">सिस्टम डायनॅमिक रंगांचा वापर करा (Android 12+)</string>
+    <string name="appearance_display_language">प्रदर्शन भाषा</string>
+    <string name="appearance_restart_info">काही बदल पूर्णपणे लागू होण्यासाठी ॲप पुन्हा सुरू करावा लागू शकतो.</string>
+    <string name="appearance_current_palette">सध्याचे पॅलेट</string>
+    <string name="appearance_selected">निवडलेले</string>
+
+    <!-- Folder/Video List UI strings -->
+    <string name="folder_new_badge">नवीन (%1$d)</string>
+    <string name="folder_videos_count">%1$d व्हिडिओ</string>
+    <string name="folder_info_multiple_locations">अनेक स्थाने</string>
+    <string name="folder_info_total_videos">एकूण व्हिडिओ</string>
+    <string name="folder_info_total_size">एकूण आकार</string>
+    <string name="folder_info_location">स्थान</string>
+    <string name="folder_info_creation_date">निर्मिती तारीख</string>
+    <string name="folder_no_folders_found">कोणतेही फोल्डर सापडले नाहीत</string>
+    <string name="folder_no_folders_desc">तुमच्या डिव्हाइसवर प्ले करण्यायोग्य व्हिडिओ असलेले कोणतेही फोल्डर आढळले नाहीत.</string>
+    <string name="folder_scan_cta">स्टोरेज स्कॅन करा</string>
+    <string name="folder_selection_title">फोल्डर निवड</string>
+    <string name="ok">ठीक आहे</string>
+
+    <!-- Recycle Bin Screen -->
+    <string name="selection_items_count">%1$d / %2$d निवडले</string>
+    <string name="recycle_bin_title">रिसायकल बिन</string>
+    <string name="action_all">सर्व</string>
+    <string name="action_info">माहिती</string>
+    <string name="action_restore">पुनर्संचयित करा</string>
+    <string name="action_delete_permanently">कायमचे हटवा</string>
+    <string name="action_delete">हटवा</string>
+    <string name="recycle_bin_empty">रिसायकल बिन रिकामे आहे</string>
+    <string name="recycle_bin_select_prompt">व्हिडिओ निवडण्यासाठी जास्त वेळ दाबा</string>
+    <string name="recycle_bin_info_desc">रिसायकल बिनमधील आयटम ३० दिवसांनंतर कायमचे हटवले जातील.</string>
+    <string name="recycle_bin_delete_confirm_title">कायमचे हटवायचे?</string>
+    <string name="recycle_bin_delete_confirm_desc">हे आयटम तुमच्या डिव्हाइसवरून कायमचे हटवले जातील. ही क्रिया मागे घेतली जाऊ शकत नाही.</string>
+    <string name="dialog_cancel">रद्द करा</string>
+    <string name="recycle_bin_days_left">%1$d दिवस शिल्लक</string>
+
+    <!-- Watch History Screen -->
+    <string name="history_title">पाहण्याचा इतिहास</string>
+    <string name="history_clear_all">सर्व इतिहास साफ करा</string>
+    <string name="history_no_history">कोणताही पाहण्याचा इतिहास आढळला नाही</string>
+    <string name="history_clear_confirm_title">पाहण्याचा इतिहास साफ करायचा?</string>
+    <string name="history_clear_confirm_desc">यामुळे तुमचा सर्व प्लेबॅक इतिहास कायमचा साफ होईल. ही क्रिया मागे घेतली जाऊ शकत नाही.</string>
+    <string name="history_clear_button">साफ करा</string>
+    <string name="history_cancel_button">रद्द करा</string>
+
+    <!-- Player Appearance & Ambient Mode -->
+    <string name="player_appearance">प्लेअरचे स्वरूप</string>
+    <string name="ambient_mode">ॲम्बियंट मोड</string>
+    <string name="ambient_mode_warning">प्लेअरची पार्श्वभूमी प्रकाशमान करते. यामुळे बॅटरीचा वापर वाढू शकतो.</string>
+</resources>

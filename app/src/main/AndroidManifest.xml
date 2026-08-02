@@ -38,7 +38,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter android:label="Nosved Player">
+            <intent-filter android:label="PlayNox Player">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -50,7 +50,7 @@
         <activity-alias
             android:name=".NvStreamAlias"
             android:targetActivity=".MainActivity"
-            android:label="Nosved Stream"
+            android:label="PlayNox Stream"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />

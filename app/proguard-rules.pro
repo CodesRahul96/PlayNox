@@ -47,13 +47,13 @@
 # MPVSurfaceView implements SurfaceHolder.Callback - surfaceCreated/Changed/
 # Destroyed are called by the Android framework by name.
 # -----------------------------------------------------------------------------
--keep class com.devson.nvplayer.player.engine.MPVPlayerEngine { *; }
--keep class com.devson.nvplayer.player.engine.MPVSurfaceView { *; }
--keep class com.devson.nvplayer.player.** { *; }
+-keep class com.codesrahul.playnox.player.engine.MPVPlayerEngine { *; }
+-keep class com.codesrahul.playnox.player.engine.MPVSurfaceView { *; }
+-keep class com.codesrahul.playnox.player.** { *; }
 
 # Keep all data/enum classes used across JNI boundaries or serialised via
 # reflection (TrackInfo, ChapterInfo, PlayerState, DecoderMode, AspectMode…)
--keepclassmembers class com.devson.nvplayer.player.** {
+-keepclassmembers class com.codesrahul.playnox.player.** {
     public protected *;
 }
 
@@ -65,7 +65,7 @@
 # derived at runtime - R8 must not rename these classes.
 # YtdlpOptionsBuilder is called by name from PlayerViewModel via settings flow.
 # -----------------------------------------------------------------------------
--keep class com.devson.nvplayer.player.ytdlp.** { *; }
+-keep class com.codesrahul.playnox.player.ytdlp.** { *; }
 
 
 # -----------------------------------------------------------------------------
