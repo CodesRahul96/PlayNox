@@ -15,7 +15,7 @@ import com.codesrahul.playnox.domain.thumbnail.CoilVideoThumbnailDecoder
 import com.codesrahul.playnox.domain.thumbnail.toThumbnailStrategy
 import okio.Path.Companion.toOkioPath
 
-class NosvedApplication : Application(), SingletonImageLoader.Factory {
+class PlayNoxApplication : Application(), SingletonImageLoader.Factory {
 
     override fun newImageLoader(context: PlatformContext): ImageLoader {
         val cacheDir = cacheDir.resolve("video_thumbnails_cache")
