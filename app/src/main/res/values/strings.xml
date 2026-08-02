@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">PlayNox Player</string>
     
-    <!-- Settings Screen -->
+    <!-- General & Common -->
     <string name="unknown">Unknown</string>
-    <string name="settings_title">Settings</string>
     <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="share">Share</string>
+    <string name="play">Play</string>
+    <string name="clear">Clear</string>
+    <string name="settings">Settings</string>
+    <string name="folders">Folders</string>
+    <string name="videos">Videos</string>
+    <string name="played">Played</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
     <string name="settings_appearance">Appearance</string>
     <string name="settings_display">Display &amp; Theme</string>
     <string name="settings_display_desc">Palettes, Dark Mode, Dynamic colors, Language</string>
@@ -41,6 +54,37 @@
     <string name="appearance_current_palette">Current Palette</string>
     <string name="appearance_selected">Selected</string>
 
+    <!-- Home Screen -->
+    <string name="home_greeting_morning">Good morning</string>
+    <string name="home_greeting_afternoon">Good afternoon</string>
+    <string name="home_greeting_evening">Good evening</string>
+    <string name="home_browse_library">Browse Video Library</string>
+    <string name="home_browse_subtitle">Explore all folders, files, and playlists</string>
+    <string name="home_latest_videos">Latest Videos</string>
+    <string name="home_quick_navigation">Quick Navigation</string>
+    <string name="home_video_feed">Video Feed</string>
+    <string name="home_video_feed_subtitle">Reels-style vertical player</string>
+    <string name="home_recycle_bin_subtitle">Restore deleted media</string>
+    <string name="home_continue_watching">Continue Watching</string>
+    <string name="home_see_more">See More</string>
+    <string name="home_no_recent_history">No Recent History</string>
+    <string name="home_no_recent_desc">No recent history. Watch videos for your history to be unlocked here.</string>
+    <string name="home_storage_analyzer">Storage Analyzer</string>
+    <string name="home_network_stream">Play Network Stream</string>
+    <string name="home_network_stream_desc">Enter a video stream URL (HTTP/HTTPS, HLS, RTMP, etc.) to stream directly in the player.</string>
+    <string name="home_enter_url_hint">Enter video stream URL...</string>
+    <string name="home_load_demo">Load Demo</string>
+    <string name="home_invalid_url">Please enter a valid URL</string>
+    <string name="home_remove_from_history">Remove from history</string>
+
+    <!-- Video Info Dialog -->
+    <string name="info_title">Video Information</string>
+    <string name="info_name">Name</string>
+    <string name="info_duration">Duration</string>
+    <string name="info_file_size">File Size</string>
+    <string name="info_creation_date">Time of Creation</string>
+    <string name="info_location">Location</string>
+
     <!-- Folder/Video List UI strings -->
     <string name="folder_new_badge">NEW (%1$d)</string>
     <string name="folder_videos_count">%1$d videos</string>
@@ -53,7 +97,6 @@
     <string name="folder_no_folders_desc">No folders with playable videos were found on your device.</string>
     <string name="folder_scan_cta">Scan Storage</string>
     <string name="folder_selection_title">Folder Selection</string>
-    <string name="ok">OK</string>
 
     <!-- Recycle Bin Screen -->
     <string name="selection_items_count">%1$d / %2$d selected</string>

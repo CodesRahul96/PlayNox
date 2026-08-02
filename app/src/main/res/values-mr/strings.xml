@@ -2,10 +2,23 @@
 <resources>
     <string name="app_name">PlayNox Player</string>
     
-    <!-- Settings Screen -->
+    <!-- General & Common -->
     <string name="unknown">अज्ञात</string>
-    <string name="settings_title">सेटिंग्ज</string>
     <string name="back">मागे</string>
+    <string name="ok">ठीक आहे</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="close">बंद करा</string>
+    <string name="open">उघडा</string>
+    <string name="share">शेअर करा</string>
+    <string name="play">प्ले करा</string>
+    <string name="clear">साफ करा</string>
+    <string name="settings">सेटिंग्ज</string>
+    <string name="folders">फोल्डर्स</string>
+    <string name="videos">व्हिडिओ</string>
+    <string name="played">पाहिलेले</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">सेटिंग्ज</string>
     <string name="settings_appearance">दिसणे</string>
     <string name="settings_display">प्रदर्शन आणि थीम</string>
     <string name="settings_display_desc">पॅलेट, डार्क मोड, डायनॅमिक रंग, भाषा</string>
@@ -42,19 +55,48 @@
     <string name="appearance_current_palette">सध्याचे पॅलेट</string>
     <string name="appearance_selected">निवडलेले</string>
 
+    <!-- Home Screen -->
+    <string name="home_greeting_morning">शुभ प्रभात</string>
+    <string name="home_greeting_afternoon">शुभ दुपार</string>
+    <string name="home_greeting_evening">शुभ संध्याकाळ</string>
+    <string name="home_browse_library">व्हिडिओ लायब्ररी पहा</string>
+    <string name="home_browse_subtitle">सर्व फोल्डर, फाइल्स आणि प्लेलिस्ट शोधा</string>
+    <string name="home_latest_videos">नवीनतम व्हिडिओ</string>
+    <string name="home_quick_navigation">जलद नॅव्हिगेशन</string>
+    <string name="home_video_feed">व्हिडिओ फीड</string>
+    <string name="home_video_feed_subtitle">रील्स-शैलीतील व्हर्टिकल प्लेअर</string>
+    <string name="home_recycle_bin_subtitle">हटवलेला मीडिया पुनर्संचयित करा</string>
+    <string name="home_continue_watching">पाहणे सुरू ठेवा</string>
+    <string name="home_see_more">अधिक पहा</string>
+    <string name="home_no_recent_history">कोणताही अलीकडील इतिहास नाही</string>
+    <string name="home_no_recent_desc">कोणताही अलीकडील इतिहास नाही. इतिहास अनलॉक करण्यासाठी व्हिडिओ पहा.</string>
+    <string name="home_storage_analyzer">स्टोरेज विश्लेषक</string>
+    <string name="home_network_stream">नेटवर्क स्ट्रीम प्ले करा</string>
+    <string name="home_network_stream_desc">प्लेअरमध्ये थेट प्रवाहित करण्यासाठी व्हिडिओ स्ट्रीम URL (HTTP/HTTPS, HLS, RTMP इ.) प्रविष्ट करा.</string>
+    <string name="home_enter_url_hint">व्हिडिओ स्ट्रीम URL प्रविष्ट करा...</string>
+    <string name="home_load_demo">डेमो लोड करा</string>
+    <string name="home_invalid_url">कृपया वैध URL प्रविष्ट करा</string>
+    <string name="home_remove_from_history">इतिहासातून काढून टाका</string>
+
+    <!-- Video Info Dialog -->
+    <string name="info_title">व्हिडिओ माहिती</string>
+    <string name="info_name">नाव</string>
+    <string name="info_duration">कालावधी</string>
+    <string name="info_file_size">फाइल आकार</string>
+    <string name="info_creation_date">निर्मिती तारीख</string>
+    <string name="info_location">स्थान</string>
+
     <!-- Folder/Video List UI strings -->
     <string name="folder_new_badge">नवीन (%1$d)</string>
     <string name="folder_videos_count">%1$d व्हिडिओ</string>
     <string name="folder_info_multiple_locations">अनेक स्थाने</string>
     <string name="folder_info_total_videos">एकूण व्हिडिओ</string>
     <string name="folder_info_total_size">एकूण आकार</string>
-    <string name="folder_info_location">स्थान</string>
     <string name="folder_info_creation_date">निर्मिती तारीख</string>
     <string name="folder_no_folders_found">कोणतेही फोल्डर सापडले नाहीत</string>
     <string name="folder_no_folders_desc">तुमच्या डिव्हाइसवर प्ले करण्यायोग्य व्हिडिओ असलेले कोणतेही फोल्डर आढळले नाहीत.</string>
     <string name="folder_scan_cta">स्टोरेज स्कॅन करा</string>
     <string name="folder_selection_title">फोल्डर निवड</string>
-    <string name="ok">ठीक आहे</string>
 
     <!-- Recycle Bin Screen -->
     <string name="selection_items_count">%1$d / %2$d निवडले</string>

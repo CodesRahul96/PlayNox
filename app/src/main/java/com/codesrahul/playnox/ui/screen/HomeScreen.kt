@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.res.stringResource
+import com.codesrahul.playnox.R
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
@@ -192,12 +194,15 @@ fun HomeScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Column {
-                    val greeting = remember {
+                    val morningStr = stringResource(R.string.home_greeting_morning)
+                    val afternoonStr = stringResource(R.string.home_greeting_afternoon)
+                    val eveningStr = stringResource(R.string.home_greeting_evening)
+                    val greeting = remember(morningStr, afternoonStr, eveningStr) {
                         val hour = java.util.Calendar.getInstance().get(java.util.Calendar.HOUR_OF_DAY)
                         when (hour) {
-                            in 0..11 -> "Good morning"
-                            in 12..16 -> "Good afternoon"
-                            else -> "Good evening"
+                            in 0..11 -> morningStr
+                            in 12..16 -> afternoonStr
+                            else -> eveningStr
                         }
                     }
                     Text(
@@ -255,8 +260,8 @@ fun HomeScreen(
 
             // Bento Main Library Card
             QuickActionCardBento(
-                title = "Browse Video Library",
-                subtitle = "Explore all folders, files, and playlists",
+                title = stringResource(R.string.home_browse_library),
+                subtitle = stringResource(R.string.home_browse_subtitle),
                 icon = Icons.Default.VideoLibrary,
                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                 iconColor = MaterialTheme.colorScheme.onPrimaryContainer,
@@ -274,7 +279,7 @@ fun HomeScreen(
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
                     Text(
-                        text = "Latest Videos",
+                        text = stringResource(R.string.home_latest_videos),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(horizontal = 20.dp)
@@ -316,7 +321,7 @@ fun HomeScreen(
                                 verticalArrangement = Arrangement.spacedBy(12.dp)
                             ) {
                                 Text(
-                                    text = "Quick Navigation",
+                                    text = stringResource(R.string.home_quick_navigation),
                                     style = MaterialTheme.typography.titleLarge,
                                     fontWeight = FontWeight.Bold
                                 )
@@ -325,8 +330,8 @@ fun HomeScreen(
                                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                                 ) {
                                     QuickActionCardBentoSmall(
-                                        title = "Video Feed",
-                                        subtitle = "Reels-style vertical player",
+                                        title = stringResource(R.string.home_video_feed),
+                                        subtitle = stringResource(R.string.home_video_feed_subtitle),
                                         icon = Icons.Default.PlayCircle,
                                         containerColor = MaterialTheme.colorScheme.secondaryContainer,
                                         iconColor = MaterialTheme.colorScheme.onSecondaryContainer,
@@ -335,8 +340,8 @@ fun HomeScreen(
                                     )
 
                                     QuickActionCardBentoSmall(
-                                        title = "Recycle Bin",
-                                        subtitle = "Restore deleted media",
+                                        title = stringResource(R.string.recycle_bin_title),
+                                        subtitle = stringResource(R.string.home_recycle_bin_subtitle),
                                         icon = Icons.Default.Delete,
                                         containerColor = MaterialTheme.colorScheme.errorContainer,
                                         iconColor = MaterialTheme.colorScheme.onErrorContainer,
@@ -355,7 +360,7 @@ fun HomeScreen(
                                 verticalArrangement = Arrangement.spacedBy(12.dp)
                             ) {
                                 Text(
-                                    text = "Continue Watching",
+                                    text = stringResource(R.string.home_continue_watching),
                                     style = MaterialTheme.typography.titleLarge,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(horizontal = 20.dp)
